@@ -1,0 +1,17 @@
+{
+  "name": "tesis",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Plataforma de gamificación colaborativa con tarjetas-concepto. Sprint 1: autenticación y gestión de sesiones.",
+  "scripts": {
+    "setup": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently -n api,web -c blue,yellow \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "seed": "npm run seed --prefix server",
+    "test": "npm test --prefix server && npm test --prefix client",
+    "build": "npm run build --prefix client",
+    "start": "npm run build && npm start --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

@@ -1,0 +1,10 @@
+node_modules
+dist
+data
+.env
+
+# Archivos auxiliares de LaTeX
+docs/*.aux
+docs/*.log
+docs/*.out
+docs/*.toc
