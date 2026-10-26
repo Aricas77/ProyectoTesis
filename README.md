@@ -1,11 +1,8 @@
-# Tesis: sistema de gamificación colaborativa de contenidos teóricos
 
-Trabajo recepcional de Ari Neftali Castro Montalvo (Licenciatura en Sistemas y Tecnologías de la Información, Universidad Veracruzana): plataforma de gamificación colaborativa con tarjetas-concepto.
-Este repositorio reúne el documento de tesis, el manifiesto de control de avances y el código. El código cubre el **Sprint 1: autenticación y gestión de sesiones**.
 
-*"Complementa" es el nombre provisional que se muestra en la interfaz: cámbialo en `client/src/config.js`.*
+Trabajo recepcional de Ari Neftali Castro Montalvo: plataforma de gamificación colaborativa con tarjetas-concepto.
+Este repositorio reúne el documento de tesis, el manifiesto de control de avances y el código. 
 
-## Qué incluye
 
 | Módulo | Qué hace |
 | --- | --- |
@@ -14,23 +11,13 @@ Este repositorio reúne el documento de tesis, el manifiesto de control de avanc
 | Ciclo de la sala | La sesión pasa por `borrador` → `abierta` → `cerrada`. Una sala abierta no se puede editar. |
 | Entrada del estudiante | El estudiante escribe el código y llega a una sala de espera. La mecánica del juego se desarrolla en el Sprint 2. |
 
-## Requisitos
 
-Node.js **22.13 o superior** (se probó con Node 22). No hace falta instalar nada más: la base de datos usa el SQLite integrado de Node (`node:sqlite`), así que no hay que compilar módulos nativos.
-
-## Cómo correrlo
-
-```bash
 npm run setup     # instala dependencias de la raíz, server y client
 npm run seed      # (opcional) crea usuarios y una sala de demostración
 npm run dev       # API en :3001 y cliente en http://localhost:5173
 ```
 
-Datos de demostración: `docente@demo.mx` y `estudiante@demo.mx`, ambos con contraseña `Demo1234`. Sala abierta de ejemplo: `SCRUM26`.
 
-Otros comandos: `npm test` (servidor y cliente), `npm run build` (compila el cliente) y `npm start` (compila y sirve todo desde el puerto 3001).
-
-## Estructura
 
 ```
 docs/                  documento de tesis (tesis.tex) y manifiesto de control de avances
